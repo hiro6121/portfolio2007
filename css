@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/★ユニバーサルセレクタで余白リセット　★/
+★{
+  margin: 0;  
+  padding: 0;    
+}
+
+body{
+font-family: "Meiryo";    
+background-image: url(back04.jpg);
+background-size: 100%;    
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#site_logo{
+    float: center;
+    width: 100%
+}
+
+nav{
+    background-image: url(menu01.jpg);
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li{
+    float: left;
+    width: 32%;
+    text-align: center;    
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: brown;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+#PROFILE{
+    background-image: url(01.jpg);
+    text-align: center;
+}
+
+#PHOTOS{
+    background-image: url(01.jpg);
+    text-align: center;
+}
+
+#TRY{
+    background-image: url(01.jpg);
+    text-align: center;
+}
+
+footer{
+    background-image: url(01.jpg);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 680px){
+   
+    .container{
+        margin: 0 10px;
+    }
+    
+    #site_logo{
+        float: center;
+    }
+    
+    #PROFILE{
+        float: center;
+    }
+    
+    #PHOTOS{
+        float: center;
+    }
+    
+    #TRY{
+        float: center;
+    }
+    
+    #footer{
+        float: center;
+    }
+    
+    #PHOTOS video{
+        max-width: 300px;
+    }
+    
+
+}
+
